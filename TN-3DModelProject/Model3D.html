@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> ThienNam | 3D Model </title>
+    <style>
+        html, body{
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            white-space: nowrap;
+            font-size: 0;
+        }    
+        #verticalMenu {
+            position: absolute;
+            height: 85%;
+            width: 150px;
+            overflow: scroll;
+            left: 30px;
+            top: 40px;
+        }
+        
+        .vt_button, .hr_button {
+            display: block;
+            width: 100%;
+            background-color: rgba(255, 0, 0, .6);
+            font-family: cursive;
+            font-size: 1.2vw;
+            font-weight: bold;
+            border: none;
+            color: green;
+            margin: 10px 0px 0px;
+            padding: 5px 0px 8px;
+            text-align: center;
+        }
+        
+        #verticalMenu::-webkit-scrollbar {
+            display: none;
+        }
+        
+        #horizontalMenu {
+            position: absolute;
+            height: 85%;
+            width: 150px;
+            overflow: scroll;
+            right: 30px;
+            top: 40px;
+        }
+        
+        #horizontalMenu::-webkit-scrollbar {
+            display: none;
+        }
+
+        .vt_button:hover, .hr_button:hover {
+            background-color: yellow;
+            opacity: 50%;
+            color: darkblue;
+        }
+
+        .vt_button:focus, .hr_button:focus {
+            background-color: rgba(0, 255, 0, .6);
+            color: white;
+        }
+
+        .label {
+            position: absolute;
+            top: 5px;
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+        }
+    </style>
+    <script>
+        function Note(){
+            console.log("FUN QUOTE:\nGiao diện người dùng cũng giống như 1 câu chuyện cười vậy.\nNếu phải giải thích thì nó không còn hay nữa!\n\nNguồn: TopDev");
+        }
+    </script>
+</head>
+<body onload="Note()">
+    <label for="verticalMenu" class="label"> Select an Object </label>
+    <div id="verticalMenu" title=""> 
+    </div>
+    <button id="btn_grid" class="vt_button" style="position: absolute; bottom: 2px;"> Enable Grid </button>
+    <label for="horizontalMenu" class="label" style="right: 0px;"> Select an Action </label>
+    <div id="horizontalMenu" title="">
+    </div>  
+    <script type="module" src="Model3D.js"></script>
+</body>
+</html>
