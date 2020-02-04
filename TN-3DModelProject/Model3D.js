@@ -78,7 +78,7 @@ let btnGrid = document.getElementById("btn_grid");
 var defaultNumOfScene_children = scene.children.length + 1;
 
 // Array of link Objects
-var src = ['Curious_skeleton', 'Dragon', 'Flying_bee', 'Flying_saucer', 'Hovering_drone', 'Links', 'Pirate_parrot', 'Skating_penguin', 'Swimming_shark.glb', 'Coming soon ...'];
+var src = ['Curious_skeleton', 'Dragon', 'Flying_bee', 'Flying_saucer', 'Hovering_drone', 'Links', 'Pirate_parrot', 'Skating_penguin', 'Swimming_shark', 'Coming soon ...'];
 
 // add event for each button of vertical Menu
 var vtMenu = document.getElementById("verticalMenu");
